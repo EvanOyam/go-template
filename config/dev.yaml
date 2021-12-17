@@ -1,0 +1,6 @@
+Env: dev # 环境
+BaseUrl: http://127.0.0.1 # 网站域名
+Port: 8086 # 端口
+LogFile: ./logs/runtime.log # 日志文件
+
+MySqlUrl: root:12020519@tcp(localhost:3306)/template_test_db?charset=utf8mb4&parseTime=True&loc=Local # 数据库连接

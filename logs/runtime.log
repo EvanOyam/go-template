@@ -1,0 +1,943 @@
+time="2021-12-12T20:20:00+08:00" level=info msg=test
+time="2021-12-12T20:25:19+08:00" level=info msg=hello
+time="2021-12-12T20:31:29+08:00" level=info msg="[hellologger]"
+time="2021-12-12T20:32:09+08:00" level=info msg=hellologger
+time="2021-12-12T20:39:55+08:00" level=warning msg=hellologger
+time="2021-12-12T20:40:09+08:00" level=error msg=hellologger
+time="2021-12-12T20:40:59+08:00" level=error msg="fuck: [hello]"
+time="2021-12-12T20:41:31+08:00" level=error msg="fuck: hello"
+[36mINFO[0m[0000] Initial logger is successful.                
+[31mERRO[0m[0000] fuck: hello                                  
+[36mINFO[0m[0000] Initial logger is successful.                
+[36mINFO[0m[0000] Initial logger is successful.                
+time="2021-12-12T20:49:20+08:00" level=info msg="Service initialization successful."
+time="2021-12-12T21:13:28+08:00" level=info msg="Service initialization successful."
+
+2021/12/12 21:22:07 [35m/Users/ouyangzhicong/workplace/demo/go/go-server-template/pkg/database/database.go:47
+[0m[31m[error] [0mfailed to initialize database, got error Error 1049: Unknown database 'template_test_db'
+time="2021-12-12T21:22:07+08:00" level=error msg="opens database failed: Error 1049: Unknown database 'template_test_db'"
+
+2021/12/12 21:22:21 [35m/Users/ouyangzhicong/workplace/demo/go/go-server-template/pkg/database/database.go:47
+[0m[31m[error] [0mfailed to initialize database, got error Error 1049: Unknown database 'template_test_db'
+time="2021-12-12T21:22:21+08:00" level=error msg="opens database failed: Error 1049: Unknown database 'template_test_db'"
+time="2021-12-12T21:22:21+08:00" level=error msg="Error 1049: Unknown database 'template_test_db'"
+
+2021/12/12 21:43:52 [32m/Users/ouyangzhicong/go/pkg/mod/gorm.io/driver/mysql@v1.2.1/migrator.go:234
+[0m[33m[0.129ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+2021/12/12 21:43:53 [32m/Users/ouyangzhicong/go/pkg/mod/gorm.io/driver/mysql@v1.2.1/migrator.go:237
+[0m[33m[1.289ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'template_test_db%' ORDER BY SCHEMA_NAME='template_test_db' DESC limit 1
+
+2021/12/12 21:43:53 [32m/Users/ouyangzhicong/workplace/demo/go/go-server-template/pkg/database/database.go:59
+[0m[33m[1.247ms] [34;1m[rows:-][0m SELECT count(*) FROM information_schema.tables WHERE table_schema = 'template_test_db' AND table_name = 'template_user' AND table_type = 'BASE TABLE'
+
+2021/12/12 21:43:53 [32m/Users/ouyangzhicong/go/pkg/mod/gorm.io/driver/mysql@v1.2.1/migrator.go:234
+[0m[33m[0.115ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+2021/12/12 21:43:53 [32m/Users/ouyangzhicong/go/pkg/mod/gorm.io/driver/mysql@v1.2.1/migrator.go:237
+[0m[33m[0.479ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'template_test_db%' ORDER BY SCHEMA_NAME='template_test_db' DESC limit 1
+
+2021/12/12 21:43:53 [32m/Users/ouyangzhicong/go/pkg/mod/gorm.io/driver/mysql@v1.2.1/migrator.go:205
+[0m[33m[0.991ms] [34;1m[rows:-][0m SELECT column_name, is_nullable, data_type, character_maximum_length, numeric_precision, numeric_scale , datetime_precision FROM information_schema.columns WHERE table_schema = 'template_test_db' AND table_name = 'template_user'
+time="2021-12-12T21:43:53+08:00" level=info msg="Service initialization successful."
+
+2021/12/12 21:52:13 [32m/Users/ouyangzhicong/go/pkg/mod/gorm.io/driver/mysql@v1.2.1/migrator.go:234
+[0m[33m[0.192ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+2021/12/12 21:52:13 [32m/Users/ouyangzhicong/go/pkg/mod/gorm.io/driver/mysql@v1.2.1/migrator.go:237
+[0m[33m[1.903ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'template_test_db%' ORDER BY SCHEMA_NAME='template_test_db' DESC limit 1
+
+2021/12/12 21:52:13 [32m/Users/ouyangzhicong/workplace/demo/go/go-server-template/pkg/database/database.go:59
+[0m[33m[1.573ms] [34;1m[rows:-][0m SELECT count(*) FROM information_schema.tables WHERE table_schema = 'template_test_db' AND table_name = 'template_user' AND table_type = 'BASE TABLE'
+
+2021/12/12 21:52:13 [32m/Users/ouyangzhicong/go/pkg/mod/gorm.io/driver/mysql@v1.2.1/migrator.go:234
+[0m[33m[0.156ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+2021/12/12 21:52:13 [32m/Users/ouyangzhicong/go/pkg/mod/gorm.io/driver/mysql@v1.2.1/migrator.go:237
+[0m[33m[0.615ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'template_test_db%' ORDER BY SCHEMA_NAME='template_test_db' DESC limit 1
+
+2021/12/12 21:52:13 [32m/Users/ouyangzhicong/go/pkg/mod/gorm.io/driver/mysql@v1.2.1/migrator.go:205
+[0m[33m[1.645ms] [34;1m[rows:-][0m SELECT column_name, is_nullable, data_type, character_maximum_length, numeric_precision, numeric_scale , datetime_precision FROM information_schema.columns WHERE table_schema = 'template_test_db' AND table_name = 'template_user'
+time="2021-12-12T21:52:13+08:00" level=info msg="Service initialization successful."
+
+2021/12/12 21:52:13 [31;1m/Users/ouyangzhicong/workplace/demo/go/go-server-template/main.go:43 [35;1mrecord not found
+[0m[33m[0.855ms] [34;1m[rows:0][0m SELECT * FROM `template_user` WHERE id = 10 LIMIT 1
+time="2021-12-12T21:52:13+08:00" level=info msg="t: &{0x140001de3f0 record not found 0 0x1400031a540 0}"
+
+2021/12/12 21:52:33 [32m/Users/ouyangzhicong/go/pkg/mod/gorm.io/driver/mysql@v1.2.1/migrator.go:234
+[0m[33m[0.180ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+2021/12/12 21:52:33 [32m/Users/ouyangzhicong/go/pkg/mod/gorm.io/driver/mysql@v1.2.1/migrator.go:237
+[0m[33m[1.130ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'template_test_db%' ORDER BY SCHEMA_NAME='template_test_db' DESC limit 1
+
+2021/12/12 21:52:33 [32m/Users/ouyangzhicong/workplace/demo/go/go-server-template/pkg/database/database.go:59
+[0m[33m[1.496ms] [34;1m[rows:-][0m SELECT count(*) FROM information_schema.tables WHERE table_schema = 'template_test_db' AND table_name = 'template_user' AND table_type = 'BASE TABLE'
+
+2021/12/12 21:52:33 [32m/Users/ouyangzhicong/go/pkg/mod/gorm.io/driver/mysql@v1.2.1/migrator.go:234
+[0m[33m[0.154ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+2021/12/12 21:52:33 [32m/Users/ouyangzhicong/go/pkg/mod/gorm.io/driver/mysql@v1.2.1/migrator.go:237
+[0m[33m[0.557ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'template_test_db%' ORDER BY SCHEMA_NAME='template_test_db' DESC limit 1
+
+2021/12/12 21:52:33 [32m/Users/ouyangzhicong/go/pkg/mod/gorm.io/driver/mysql@v1.2.1/migrator.go:205
+[0m[33m[1.124ms] [34;1m[rows:-][0m SELECT column_name, is_nullable, data_type, character_maximum_length, numeric_precision, numeric_scale , datetime_precision FROM information_schema.columns WHERE table_schema = 'template_test_db' AND table_name = 'template_user'
+time="2021-12-12T21:52:33+08:00" level=info msg="Service initialization successful."
+
+2021/12/12 21:52:33 [31;1m/Users/ouyangzhicong/workplace/demo/go/go-server-template/main.go:43 [35;1msql: Scan error on column index 5, name "create_time": converting driver.Value type time.Time ("2021-12-12 21:43:21 +0800 CST") to a int64: invalid syntax
+[0m[33m[0.772ms] [34;1m[rows:1][0m SELECT * FROM `template_user` WHERE id = 6 LIMIT 1
+time="2021-12-12T21:52:33+08:00" level=info msg="t: &{0x140001de3f0 sql: Scan error on column index 5, name \"create_time\": converting driver.Value type time.Time (\"2021-12-12 21:43:21 +0800 CST\") to a int64: invalid syntax 1 0x14000318540 0}"
+
+2021/12/12 21:52:44 [32m/Users/ouyangzhicong/go/pkg/mod/gorm.io/driver/mysql@v1.2.1/migrator.go:234
+[0m[33m[0.248ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+2021/12/12 21:52:44 [32m/Users/ouyangzhicong/go/pkg/mod/gorm.io/driver/mysql@v1.2.1/migrator.go:237
+[0m[33m[1.175ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'template_test_db%' ORDER BY SCHEMA_NAME='template_test_db' DESC limit 1
+
+2021/12/12 21:52:44 [32m/Users/ouyangzhicong/workplace/demo/go/go-server-template/pkg/database/database.go:59
+[0m[33m[1.670ms] [34;1m[rows:-][0m SELECT count(*) FROM information_schema.tables WHERE table_schema = 'template_test_db' AND table_name = 'template_user' AND table_type = 'BASE TABLE'
+
+2021/12/12 21:52:44 [32m/Users/ouyangzhicong/go/pkg/mod/gorm.io/driver/mysql@v1.2.1/migrator.go:234
+[0m[33m[0.284ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+2021/12/12 21:52:44 [32m/Users/ouyangzhicong/go/pkg/mod/gorm.io/driver/mysql@v1.2.1/migrator.go:237
+[0m[33m[1.025ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'template_test_db%' ORDER BY SCHEMA_NAME='template_test_db' DESC limit 1
+
+2021/12/12 21:52:44 [32m/Users/ouyangzhicong/go/pkg/mod/gorm.io/driver/mysql@v1.2.1/migrator.go:205
+[0m[33m[1.650ms] [34;1m[rows:-][0m SELECT column_name, is_nullable, data_type, character_maximum_length, numeric_precision, numeric_scale , datetime_precision FROM information_schema.columns WHERE table_schema = 'template_test_db' AND table_name = 'template_user'
+time="2021-12-12T21:52:44+08:00" level=info msg="Service initialization successful."
+
+2021/12/12 21:52:44 [31;1m/Users/ouyangzhicong/workplace/demo/go/go-server-template/main.go:43 [35;1msql: Scan error on column index 5, name "create_time": converting driver.Value type time.Time ("2021-12-12 21:43:21 +0800 CST") to a int64: invalid syntax
+[0m[33m[1.467ms] [34;1m[rows:1][0m SELECT * FROM `template_user` WHERE id = 6 LIMIT 1
+time="2021-12-12T21:52:44+08:00" level=info msg="t: {0x140001de3f0 sql: Scan error on column index 5, name \"create_time\": converting driver.Value type time.Time (\"2021-12-12 21:43:21 +0800 CST\") to a int64: invalid syntax 1 0x14000318540 0}"
+
+2021/12/12 21:55:25 [32m/Users/ouyangzhicong/go/pkg/mod/gorm.io/driver/mysql@v1.2.1/migrator.go:234
+[0m[33m[0.345ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+2021/12/12 21:55:25 [32m/Users/ouyangzhicong/go/pkg/mod/gorm.io/driver/mysql@v1.2.1/migrator.go:237
+[0m[33m[1.934ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'template_test_db%' ORDER BY SCHEMA_NAME='template_test_db' DESC limit 1
+
+2021/12/12 21:55:25 [32m/Users/ouyangzhicong/workplace/demo/go/go-server-template/pkg/database/database.go:59
+[0m[33m[1.615ms] [34;1m[rows:-][0m SELECT count(*) FROM information_schema.tables WHERE table_schema = 'template_test_db' AND table_name = 'template_user' AND table_type = 'BASE TABLE'
+
+2021/12/12 21:55:25 [32m/Users/ouyangzhicong/go/pkg/mod/gorm.io/driver/mysql@v1.2.1/migrator.go:234
+[0m[33m[0.198ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+2021/12/12 21:55:25 [32m/Users/ouyangzhicong/go/pkg/mod/gorm.io/driver/mysql@v1.2.1/migrator.go:237
+[0m[33m[0.983ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'template_test_db%' ORDER BY SCHEMA_NAME='template_test_db' DESC limit 1
+
+2021/12/12 21:55:25 [32m/Users/ouyangzhicong/go/pkg/mod/gorm.io/driver/mysql@v1.2.1/migrator.go:205
+[0m[33m[1.380ms] [34;1m[rows:-][0m SELECT column_name, is_nullable, data_type, character_maximum_length, numeric_precision, numeric_scale , datetime_precision FROM information_schema.columns WHERE table_schema = 'template_test_db' AND table_name = 'template_user'
+time="2021-12-12T21:55:25+08:00" level=info msg="Service initialization successful."
+
+2021/12/12 21:55:25 [31;1m/Users/ouyangzhicong/workplace/demo/go/go-server-template/main.go:44 [35;1msql: Scan error on column index 5, name "create_time": converting driver.Value type time.Time ("2021-12-12 21:43:21 +0800 CST") to a int64: invalid syntax
+[0m[33m[0.586ms] [34;1m[rows:1][0m SELECT * FROM `template_user` ORDER BY `template_user`.`id` LIMIT 1
+time="2021-12-12T21:55:25+08:00" level=info msg="t: {{6} {admin true} $2a$10$ofA39bAFMpYpIX/Xiz7jtOMH9JnPvYfPRlzHXqAtLPFpbE/cLdjmS evan hello world 0 0}"
+
+2021/12/12 21:56:00 [32m/Users/ouyangzhicong/go/pkg/mod/gorm.io/driver/mysql@v1.2.1/migrator.go:234
+[0m[33m[0.182ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+2021/12/12 21:56:00 [32m/Users/ouyangzhicong/go/pkg/mod/gorm.io/driver/mysql@v1.2.1/migrator.go:237
+[0m[33m[1.557ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'template_test_db%' ORDER BY SCHEMA_NAME='template_test_db' DESC limit 1
+
+2021/12/12 21:56:00 [32m/Users/ouyangzhicong/workplace/demo/go/go-server-template/pkg/database/database.go:59
+[0m[33m[1.242ms] [34;1m[rows:-][0m SELECT count(*) FROM information_schema.tables WHERE table_schema = 'template_test_db' AND table_name = 'template_user' AND table_type = 'BASE TABLE'
+
+2021/12/12 21:56:00 [32m/Users/ouyangzhicong/go/pkg/mod/gorm.io/driver/mysql@v1.2.1/migrator.go:234
+[0m[33m[0.149ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+2021/12/12 21:56:00 [32m/Users/ouyangzhicong/go/pkg/mod/gorm.io/driver/mysql@v1.2.1/migrator.go:237
+[0m[33m[0.966ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'template_test_db%' ORDER BY SCHEMA_NAME='template_test_db' DESC limit 1
+
+2021/12/12 21:56:00 [32m/Users/ouyangzhicong/go/pkg/mod/gorm.io/driver/mysql@v1.2.1/migrator.go:205
+[0m[33m[1.650ms] [34;1m[rows:-][0m SELECT column_name, is_nullable, data_type, character_maximum_length, numeric_precision, numeric_scale , datetime_precision FROM information_schema.columns WHERE table_schema = 'template_test_db' AND table_name = 'template_user'
+time="2021-12-12T21:56:00+08:00" level=info msg="Service initialization successful."
+
+2021/12/12 21:56:00 [31;1m/Users/ouyangzhicong/workplace/demo/go/go-server-template/main.go:44 [35;1msql: Scan error on column index 5, name "create_time": converting driver.Value type time.Time ("2021-12-12 21:43:21 +0800 CST") to a int64: invalid syntax
+[0m[33m[0.650ms] [34;1m[rows:1][0m SELECT * FROM `template_user` ORDER BY `template_user`.`id` LIMIT 1
+time="2021-12-12T21:56:00+08:00" level=info msg="t: {{%!s(int64=6)} {admin %!s(bool=true)} $2a$10$ofA39bAFMpYpIX/Xiz7jtOMH9JnPvYfPRlzHXqAtLPFpbE/cLdjmS evan hello world %!s(int64=0) %!s(int64=0)}"
+
+2021/12/12 21:57:02 [32m/Users/ouyangzhicong/go/pkg/mod/gorm.io/driver/mysql@v1.2.1/migrator.go:234
+[0m[33m[0.120ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+2021/12/12 21:57:02 [32m/Users/ouyangzhicong/go/pkg/mod/gorm.io/driver/mysql@v1.2.1/migrator.go:237
+[0m[33m[1.496ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'template_test_db%' ORDER BY SCHEMA_NAME='template_test_db' DESC limit 1
+
+2021/12/12 21:57:02 [32m/Users/ouyangzhicong/workplace/demo/go/go-server-template/pkg/database/database.go:59
+[0m[33m[1.513ms] [34;1m[rows:-][0m SELECT count(*) FROM information_schema.tables WHERE table_schema = 'template_test_db' AND table_name = 'template_user' AND table_type = 'BASE TABLE'
+
+2021/12/12 21:57:02 [32m/Users/ouyangzhicong/go/pkg/mod/gorm.io/driver/mysql@v1.2.1/migrator.go:234
+[0m[33m[0.139ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+2021/12/12 21:57:02 [32m/Users/ouyangzhicong/go/pkg/mod/gorm.io/driver/mysql@v1.2.1/migrator.go:237
+[0m[33m[0.695ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'template_test_db%' ORDER BY SCHEMA_NAME='template_test_db' DESC limit 1
+
+2021/12/12 21:57:02 [32m/Users/ouyangzhicong/go/pkg/mod/gorm.io/driver/mysql@v1.2.1/migrator.go:205
+[0m[33m[1.150ms] [34;1m[rows:-][0m SELECT column_name, is_nullable, data_type, character_maximum_length, numeric_precision, numeric_scale , datetime_precision FROM information_schema.columns WHERE table_schema = 'template_test_db' AND table_name = 'template_user'
+time="2021-12-12T21:57:02+08:00" level=info msg="Service initialization successful."
+
+2021/12/12 21:57:02 [31;1m/Users/ouyangzhicong/workplace/demo/go/go-server-template/main.go:44 [35;1msql: Scan error on column index 5, name "create_time": converting driver.Value type time.Time ("2021-12-12 21:43:21 +0800 CST") to a int64: invalid syntax
+[0m[33m[0.650ms] [34;1m[rows:1][0m SELECT * FROM `template_user` ORDER BY `template_user`.`id` LIMIT 1
+time="2021-12-12T21:57:02+08:00" level=info msg="t: evan"
+
+2021/12/12 23:19:14 [32m/Users/ouyangzhicong/go/pkg/mod/gorm.io/driver/mysql@v1.2.1/migrator.go:234
+[0m[33m[0.183ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+2021/12/12 23:19:14 [32m/Users/ouyangzhicong/go/pkg/mod/gorm.io/driver/mysql@v1.2.1/migrator.go:237
+[0m[33m[2.038ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'template_test_db%' ORDER BY SCHEMA_NAME='template_test_db' DESC limit 1
+
+2021/12/12 23:19:14 [32m/Users/ouyangzhicong/workplace/demo/go/go-server-template/pkg/database/database.go:59
+[0m[33m[1.746ms] [34;1m[rows:-][0m SELECT count(*) FROM information_schema.tables WHERE table_schema = 'template_test_db' AND table_name = 'template_user' AND table_type = 'BASE TABLE'
+
+2021/12/12 23:19:14 [32m/Users/ouyangzhicong/go/pkg/mod/gorm.io/driver/mysql@v1.2.1/migrator.go:234
+[0m[33m[0.123ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+2021/12/12 23:19:14 [32m/Users/ouyangzhicong/go/pkg/mod/gorm.io/driver/mysql@v1.2.1/migrator.go:237
+[0m[33m[0.535ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'template_test_db%' ORDER BY SCHEMA_NAME='template_test_db' DESC limit 1
+
+2021/12/12 23:19:14 [32m/Users/ouyangzhicong/go/pkg/mod/gorm.io/driver/mysql@v1.2.1/migrator.go:205
+[0m[33m[1.396ms] [34;1m[rows:-][0m SELECT column_name, is_nullable, data_type, character_maximum_length, numeric_precision, numeric_scale , datetime_precision FROM information_schema.columns WHERE table_schema = 'template_test_db' AND table_name = 'template_user'
+time="2021-12-12T23:19:14+08:00" level=info msg="Service initialization successful."
+time="2021-12-12T23:19:14+08:00" level=info msg="logPath: ./logs/runtime.log"
+time="2021-12-12T23:19:14+08:00" level=info msg="mySqlUrl root:12020519@tcp(localhost:3306)/template_test_db?charset=utf8mb4&parseTime=True&loc=Local"
+
+2021/12/12 23:19:27 [32m/Users/ouyangzhicong/go/pkg/mod/gorm.io/driver/mysql@v1.2.1/migrator.go:234
+[0m[33m[0.170ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+2021/12/12 23:19:27 [32m/Users/ouyangzhicong/go/pkg/mod/gorm.io/driver/mysql@v1.2.1/migrator.go:237
+[0m[33m[1.357ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'template_test_db%' ORDER BY SCHEMA_NAME='template_test_db' DESC limit 1
+
+2021/12/12 23:19:27 [32m/Users/ouyangzhicong/workplace/demo/go/go-server-template/pkg/database/database.go:59
+[0m[33m[1.432ms] [34;1m[rows:-][0m SELECT count(*) FROM information_schema.tables WHERE table_schema = 'template_test_db' AND table_name = 'template_user' AND table_type = 'BASE TABLE'
+
+2021/12/12 23:19:27 [32m/Users/ouyangzhicong/go/pkg/mod/gorm.io/driver/mysql@v1.2.1/migrator.go:234
+[0m[33m[0.176ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+2021/12/12 23:19:27 [32m/Users/ouyangzhicong/go/pkg/mod/gorm.io/driver/mysql@v1.2.1/migrator.go:237
+[0m[33m[0.669ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'template_test_db%' ORDER BY SCHEMA_NAME='template_test_db' DESC limit 1
+
+2021/12/12 23:19:27 [32m/Users/ouyangzhicong/go/pkg/mod/gorm.io/driver/mysql@v1.2.1/migrator.go:205
+[0m[33m[1.584ms] [34;1m[rows:-][0m SELECT column_name, is_nullable, data_type, character_maximum_length, numeric_precision, numeric_scale , datetime_precision FROM information_schema.columns WHERE table_schema = 'template_test_db' AND table_name = 'template_user'
+time="2021-12-12T23:19:27+08:00" level=info msg="Service initialization successful."
+
+2021/12/12 23:59:38 [32m/Users/ouyangzhicong/go/pkg/mod/gorm.io/driver/mysql@v1.2.1/migrator.go:234
+[0m[33m[0.165ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+2021/12/12 23:59:38 [32m/Users/ouyangzhicong/go/pkg/mod/gorm.io/driver/mysql@v1.2.1/migrator.go:237
+[0m[33m[2.431ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'template_test_db%' ORDER BY SCHEMA_NAME='template_test_db' DESC limit 1
+
+2021/12/12 23:59:38 [32m/Users/ouyangzhicong/workplace/demo/go/go-server-template/pkg/database/database.go:59
+[0m[33m[1.644ms] [34;1m[rows:-][0m SELECT count(*) FROM information_schema.tables WHERE table_schema = 'template_test_db' AND table_name = 'template_user' AND table_type = 'BASE TABLE'
+
+2021/12/12 23:59:38 [32m/Users/ouyangzhicong/go/pkg/mod/gorm.io/driver/mysql@v1.2.1/migrator.go:234
+[0m[33m[0.132ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+2021/12/12 23:59:38 [32m/Users/ouyangzhicong/go/pkg/mod/gorm.io/driver/mysql@v1.2.1/migrator.go:237
+[0m[33m[0.746ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'template_test_db%' ORDER BY SCHEMA_NAME='template_test_db' DESC limit 1
+
+2021/12/12 23:59:38 [32m/Users/ouyangzhicong/go/pkg/mod/gorm.io/driver/mysql@v1.2.1/migrator.go:205
+[0m[33m[1.401ms] [34;1m[rows:-][0m SELECT column_name, is_nullable, data_type, character_maximum_length, numeric_precision, numeric_scale , datetime_precision FROM information_schema.columns WHERE table_schema = 'template_test_db' AND table_name = 'template_user'
+time="2021-12-12T23:59:38+08:00" level=info msg="Service initialization successful."
+
+2021/12/12 23:59:56 [32m/Users/ouyangzhicong/go/pkg/mod/gorm.io/driver/mysql@v1.2.1/migrator.go:234
+[0m[33m[0.162ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+2021/12/12 23:59:56 [32m/Users/ouyangzhicong/go/pkg/mod/gorm.io/driver/mysql@v1.2.1/migrator.go:237
+[0m[33m[1.021ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'template_test_db%' ORDER BY SCHEMA_NAME='template_test_db' DESC limit 1
+
+2021/12/12 23:59:56 [32m/Users/ouyangzhicong/workplace/demo/go/go-server-template/pkg/database/database.go:59
+[0m[33m[1.218ms] [34;1m[rows:-][0m SELECT count(*) FROM information_schema.tables WHERE table_schema = 'template_test_db' AND table_name = 'template_user' AND table_type = 'BASE TABLE'
+
+2021/12/12 23:59:56 [32m/Users/ouyangzhicong/go/pkg/mod/gorm.io/driver/mysql@v1.2.1/migrator.go:234
+[0m[33m[0.174ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+2021/12/12 23:59:56 [32m/Users/ouyangzhicong/go/pkg/mod/gorm.io/driver/mysql@v1.2.1/migrator.go:237
+[0m[33m[0.475ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'template_test_db%' ORDER BY SCHEMA_NAME='template_test_db' DESC limit 1
+
+2021/12/12 23:59:56 [32m/Users/ouyangzhicong/go/pkg/mod/gorm.io/driver/mysql@v1.2.1/migrator.go:205
+[0m[33m[0.948ms] [34;1m[rows:-][0m SELECT column_name, is_nullable, data_type, character_maximum_length, numeric_precision, numeric_scale , datetime_precision FROM information_schema.columns WHERE table_schema = 'template_test_db' AND table_name = 'template_user'
+time="2021-12-12T23:59:56+08:00" level=info msg="Service initialization successful."
+time="2021-12-13T00:01:33+08:00" level=info msg="got signal [interrupt], exiting now"
+time="2021-12-13T00:01:33+08:00" level=info msg=Exited
+
+2021/12/13 00:05:10 [32m/Users/ouyangzhicong/go/pkg/mod/gorm.io/driver/mysql@v1.2.1/migrator.go:234
+[0m[33m[0.126ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+2021/12/13 00:05:10 [32m/Users/ouyangzhicong/go/pkg/mod/gorm.io/driver/mysql@v1.2.1/migrator.go:237
+[0m[33m[2.014ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'template_test_db%' ORDER BY SCHEMA_NAME='template_test_db' DESC limit 1
+
+2021/12/13 00:05:10 [32m/Users/ouyangzhicong/workplace/demo/go/go-server-template/pkg/database/database.go:59
+[0m[33m[1.774ms] [34;1m[rows:-][0m SELECT count(*) FROM information_schema.tables WHERE table_schema = 'template_test_db' AND table_name = 'template_user' AND table_type = 'BASE TABLE'
+
+2021/12/13 00:05:10 [32m/Users/ouyangzhicong/go/pkg/mod/gorm.io/driver/mysql@v1.2.1/migrator.go:234
+[0m[33m[0.177ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+2021/12/13 00:05:10 [32m/Users/ouyangzhicong/go/pkg/mod/gorm.io/driver/mysql@v1.2.1/migrator.go:237
+[0m[33m[0.485ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'template_test_db%' ORDER BY SCHEMA_NAME='template_test_db' DESC limit 1
+
+2021/12/13 00:05:10 [32m/Users/ouyangzhicong/go/pkg/mod/gorm.io/driver/mysql@v1.2.1/migrator.go:205
+[0m[33m[1.287ms] [34;1m[rows:-][0m SELECT column_name, is_nullable, data_type, character_maximum_length, numeric_precision, numeric_scale , datetime_precision FROM information_schema.columns WHERE table_schema = 'template_test_db' AND table_name = 'template_user'
+time="2021-12-13T00:05:10+08:00" level=info msg="Service initialization successful."
+time="2021-12-13T00:12:59+08:00" level=info msg="got signal [interrupt], exiting now"
+
+2021/12/13 00:13:02 [32m/Users/ouyangzhicong/go/pkg/mod/gorm.io/driver/mysql@v1.2.1/migrator.go:234
+[0m[33m[0.184ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+2021/12/13 00:13:02 [32m/Users/ouyangzhicong/go/pkg/mod/gorm.io/driver/mysql@v1.2.1/migrator.go:237
+[0m[33m[2.406ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'template_test_db%' ORDER BY SCHEMA_NAME='template_test_db' DESC limit 1
+
+2021/12/13 00:13:02 [32m/Users/ouyangzhicong/workplace/demo/go/go-server-template/pkg/database/database.go:59
+[0m[33m[1.791ms] [34;1m[rows:-][0m SELECT count(*) FROM information_schema.tables WHERE table_schema = 'template_test_db' AND table_name = 'template_user' AND table_type = 'BASE TABLE'
+
+2021/12/13 00:13:02 [32m/Users/ouyangzhicong/go/pkg/mod/gorm.io/driver/mysql@v1.2.1/migrator.go:234
+[0m[33m[0.192ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+2021/12/13 00:13:02 [32m/Users/ouyangzhicong/go/pkg/mod/gorm.io/driver/mysql@v1.2.1/migrator.go:237
+[0m[33m[0.581ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'template_test_db%' ORDER BY SCHEMA_NAME='template_test_db' DESC limit 1
+
+2021/12/13 00:13:02 [32m/Users/ouyangzhicong/go/pkg/mod/gorm.io/driver/mysql@v1.2.1/migrator.go:205
+[0m[33m[1.680ms] [34;1m[rows:-][0m SELECT column_name, is_nullable, data_type, character_maximum_length, numeric_precision, numeric_scale , datetime_precision FROM information_schema.columns WHERE table_schema = 'template_test_db' AND table_name = 'template_user'
+time="2021-12-13T00:13:02+08:00" level=info msg="Service initialization successful."
+time="2021-12-13T00:14:28+08:00" level=info msg="got signal [interrupt], exiting now"
+
+2021/12/13 00:14:31 [32m/Users/ouyangzhicong/go/pkg/mod/gorm.io/driver/mysql@v1.2.1/migrator.go:234
+[0m[33m[0.158ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+2021/12/13 00:14:31 [32m/Users/ouyangzhicong/go/pkg/mod/gorm.io/driver/mysql@v1.2.1/migrator.go:237
+[0m[33m[0.852ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'template_test_db%' ORDER BY SCHEMA_NAME='template_test_db' DESC limit 1
+
+2021/12/13 00:14:31 [32m/Users/ouyangzhicong/workplace/demo/go/go-server-template/pkg/database/database.go:59
+[0m[33m[1.392ms] [34;1m[rows:-][0m SELECT count(*) FROM information_schema.tables WHERE table_schema = 'template_test_db' AND table_name = 'template_user' AND table_type = 'BASE TABLE'
+
+2021/12/13 00:14:31 [32m/Users/ouyangzhicong/go/pkg/mod/gorm.io/driver/mysql@v1.2.1/migrator.go:234
+[0m[33m[0.161ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+2021/12/13 00:14:31 [32m/Users/ouyangzhicong/go/pkg/mod/gorm.io/driver/mysql@v1.2.1/migrator.go:237
+[0m[33m[0.630ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'template_test_db%' ORDER BY SCHEMA_NAME='template_test_db' DESC limit 1
+
+2021/12/13 00:14:31 [32m/Users/ouyangzhicong/go/pkg/mod/gorm.io/driver/mysql@v1.2.1/migrator.go:205
+[0m[33m[1.023ms] [34;1m[rows:-][0m SELECT column_name, is_nullable, data_type, character_maximum_length, numeric_precision, numeric_scale , datetime_precision FROM information_schema.columns WHERE table_schema = 'template_test_db' AND table_name = 'template_user'
+time="2021-12-13T00:14:31+08:00" level=info msg="Service initialization successful."
+time="2021-12-13T00:18:35+08:00" level=info msg="got signal [interrupt], exiting now"
+
+2021/12/13 00:18:38 [32m/Users/ouyangzhicong/go/pkg/mod/gorm.io/driver/mysql@v1.2.1/migrator.go:234
+[0m[33m[0.188ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+2021/12/13 00:18:38 [32m/Users/ouyangzhicong/go/pkg/mod/gorm.io/driver/mysql@v1.2.1/migrator.go:237
+[0m[33m[1.708ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'template_test_db%' ORDER BY SCHEMA_NAME='template_test_db' DESC limit 1
+
+2021/12/13 00:18:38 [32m/Users/ouyangzhicong/workplace/demo/go/go-server-template/pkg/database/database.go:59
+[0m[33m[1.587ms] [34;1m[rows:-][0m SELECT count(*) FROM information_schema.tables WHERE table_schema = 'template_test_db' AND table_name = 'template_user' AND table_type = 'BASE TABLE'
+
+2021/12/13 00:18:38 [32m/Users/ouyangzhicong/go/pkg/mod/gorm.io/driver/mysql@v1.2.1/migrator.go:234
+[0m[33m[0.179ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+2021/12/13 00:18:38 [32m/Users/ouyangzhicong/go/pkg/mod/gorm.io/driver/mysql@v1.2.1/migrator.go:237
+[0m[33m[0.554ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'template_test_db%' ORDER BY SCHEMA_NAME='template_test_db' DESC limit 1
+
+2021/12/13 00:18:38 [32m/Users/ouyangzhicong/go/pkg/mod/gorm.io/driver/mysql@v1.2.1/migrator.go:205
+[0m[33m[1.272ms] [34;1m[rows:-][0m SELECT column_name, is_nullable, data_type, character_maximum_length, numeric_precision, numeric_scale , datetime_precision FROM information_schema.columns WHERE table_schema = 'template_test_db' AND table_name = 'template_user'
+time="2021-12-13T00:18:38+08:00" level=info msg="Service initialization successful."
+time="2021-12-13T00:23:22+08:00" level=info msg="got signal [interrupt], exiting now"
+
+2021/12/13 00:23:24 [32m/Users/ouyangzhicong/go/pkg/mod/gorm.io/driver/mysql@v1.2.1/migrator.go:234
+[0m[33m[1.082ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+2021/12/13 00:23:24 [32m/Users/ouyangzhicong/go/pkg/mod/gorm.io/driver/mysql@v1.2.1/migrator.go:237
+[0m[33m[2.186ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'template_test_db%' ORDER BY SCHEMA_NAME='template_test_db' DESC limit 1
+
+2021/12/13 00:23:24 [32m/Users/ouyangzhicong/workplace/demo/go/go-server-template/pkg/database/database.go:59
+[0m[33m[1.500ms] [34;1m[rows:-][0m SELECT count(*) FROM information_schema.tables WHERE table_schema = 'template_test_db' AND table_name = 'template_user' AND table_type = 'BASE TABLE'
+
+2021/12/13 00:23:24 [32m/Users/ouyangzhicong/go/pkg/mod/gorm.io/driver/mysql@v1.2.1/migrator.go:234
+[0m[33m[0.158ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+2021/12/13 00:23:24 [32m/Users/ouyangzhicong/go/pkg/mod/gorm.io/driver/mysql@v1.2.1/migrator.go:237
+[0m[33m[0.529ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'template_test_db%' ORDER BY SCHEMA_NAME='template_test_db' DESC limit 1
+
+2021/12/13 00:23:24 [32m/Users/ouyangzhicong/go/pkg/mod/gorm.io/driver/mysql@v1.2.1/migrator.go:205
+[0m[33m[1.220ms] [34;1m[rows:-][0m SELECT column_name, is_nullable, data_type, character_maximum_length, numeric_precision, numeric_scale , datetime_precision FROM information_schema.columns WHERE table_schema = 'template_test_db' AND table_name = 'template_user'
+time="2021-12-13T00:23:24+08:00" level=info msg="Service initialization successful."
+
+2021/12/13 13:59:33 [32m/Users/ouyangzhicong/go/pkg/mod/gorm.io/driver/mysql@v1.2.1/migrator.go:234
+[0m[33m[0.228ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+2021/12/13 13:59:33 [32m/Users/ouyangzhicong/go/pkg/mod/gorm.io/driver/mysql@v1.2.1/migrator.go:237
+[0m[33m[2.341ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'template_test_db%' ORDER BY SCHEMA_NAME='template_test_db' DESC limit 1
+
+2021/12/13 13:59:33 [32m/Users/ouyangzhicong/workplace/demo/go/go-server-template/pkg/database/database.go:59
+[0m[33m[2.562ms] [34;1m[rows:-][0m SELECT count(*) FROM information_schema.tables WHERE table_schema = 'template_test_db' AND table_name = 'template_user' AND table_type = 'BASE TABLE'
+
+2021/12/13 13:59:33 [32m/Users/ouyangzhicong/go/pkg/mod/gorm.io/driver/mysql@v1.2.1/migrator.go:234
+[0m[33m[0.189ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+2021/12/13 13:59:33 [32m/Users/ouyangzhicong/go/pkg/mod/gorm.io/driver/mysql@v1.2.1/migrator.go:237
+[0m[33m[0.704ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'template_test_db%' ORDER BY SCHEMA_NAME='template_test_db' DESC limit 1
+
+2021/12/13 13:59:33 [32m/Users/ouyangzhicong/go/pkg/mod/gorm.io/driver/mysql@v1.2.1/migrator.go:205
+[0m[33m[1.701ms] [34;1m[rows:-][0m SELECT column_name, is_nullable, data_type, character_maximum_length, numeric_precision, numeric_scale , datetime_precision FROM information_schema.columns WHERE table_schema = 'template_test_db' AND table_name = 'template_user'
+
+2021/12/13 13:59:33 [32m/Users/ouyangzhicong/go/pkg/mod/gorm.io/driver/mysql@v1.2.1/migrator.go:82
+[0m[33m[25.948ms] [34;1m[rows:2][0m ALTER TABLE `template_user` MODIFY COLUMN `created_at` datetime(3) NULL
+
+2021/12/13 13:59:33 [32m/Users/ouyangzhicong/go/pkg/mod/gorm.io/driver/mysql@v1.2.1/migrator.go:82
+[0m[33m[11.130ms] [34;1m[rows:2][0m ALTER TABLE `template_user` MODIFY COLUMN `updated_at` datetime(3) NULL
+
+2021/12/13 13:59:33 [32m/Users/ouyangzhicong/go/pkg/mod/gorm.io/driver/mysql@v1.2.1/migrator.go:82
+[0m[33m[11.006ms] [34;1m[rows:2][0m ALTER TABLE `template_user` MODIFY COLUMN `deleted_at` datetime(3) NULL
+
+2021/12/13 13:59:33 [32m/Users/ouyangzhicong/go/pkg/mod/gorm.io/driver/mysql@v1.2.1/migrator.go:234
+[0m[33m[0.197ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+2021/12/13 13:59:33 [32m/Users/ouyangzhicong/go/pkg/mod/gorm.io/driver/mysql@v1.2.1/migrator.go:237
+[0m[33m[0.610ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'template_test_db%' ORDER BY SCHEMA_NAME='template_test_db' DESC limit 1
+
+2021/12/13 13:59:33 [32m/Users/ouyangzhicong/workplace/demo/go/go-server-template/pkg/database/database.go:59
+[0m[33m[1.670ms] [34;1m[rows:-][0m SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'template_test_db' AND table_name = 'template_user' AND index_name = 'idx_template_user_deleted_at'
+
+2021/12/13 13:59:33 [32m/Users/ouyangzhicong/workplace/demo/go/go-server-template/pkg/database/database.go:59
+[0m[33m[4.074ms] [34;1m[rows:0][0m CREATE INDEX `idx_template_user_deleted_at` ON `template_user`(`deleted_at`)
+time="2021-12-13T13:59:33+08:00" level=info msg="Service initialization successful."
+time="2021-12-13T14:11:09+08:00" level=info msg="got signal [interrupt], exiting now"
+
+2021/12/13 14:11:11 [32m/Users/ouyangzhicong/go/pkg/mod/gorm.io/driver/mysql@v1.2.1/migrator.go:234
+[0m[33m[0.184ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+2021/12/13 14:11:11 [32m/Users/ouyangzhicong/go/pkg/mod/gorm.io/driver/mysql@v1.2.1/migrator.go:237
+[0m[33m[0.937ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'template_test_db%' ORDER BY SCHEMA_NAME='template_test_db' DESC limit 1
+
+2021/12/13 14:11:11 [32m/Users/ouyangzhicong/workplace/demo/go/go-server-template/pkg/database/database.go:59
+[0m[33m[1.169ms] [34;1m[rows:-][0m SELECT count(*) FROM information_schema.tables WHERE table_schema = 'template_test_db' AND table_name = 'template_user' AND table_type = 'BASE TABLE'
+
+2021/12/13 14:11:11 [32m/Users/ouyangzhicong/go/pkg/mod/gorm.io/driver/mysql@v1.2.1/migrator.go:234
+[0m[33m[0.146ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+2021/12/13 14:11:11 [32m/Users/ouyangzhicong/go/pkg/mod/gorm.io/driver/mysql@v1.2.1/migrator.go:237
+[0m[33m[0.693ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'template_test_db%' ORDER BY SCHEMA_NAME='template_test_db' DESC limit 1
+
+2021/12/13 14:11:11 [32m/Users/ouyangzhicong/go/pkg/mod/gorm.io/driver/mysql@v1.2.1/migrator.go:205
+[0m[33m[1.315ms] [34;1m[rows:-][0m SELECT column_name, is_nullable, data_type, character_maximum_length, numeric_precision, numeric_scale , datetime_precision FROM information_schema.columns WHERE table_schema = 'template_test_db' AND table_name = 'template_user'
+
+2021/12/13 14:11:11 [32m/Users/ouyangzhicong/go/pkg/mod/gorm.io/driver/mysql@v1.2.1/migrator.go:234
+[0m[33m[0.124ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+2021/12/13 14:11:11 [32m/Users/ouyangzhicong/go/pkg/mod/gorm.io/driver/mysql@v1.2.1/migrator.go:237
+[0m[33m[0.768ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'template_test_db%' ORDER BY SCHEMA_NAME='template_test_db' DESC limit 1
+
+2021/12/13 14:11:11 [32m/Users/ouyangzhicong/workplace/demo/go/go-server-template/pkg/database/database.go:59
+[0m[33m[1.231ms] [34;1m[rows:-][0m SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'template_test_db' AND table_name = 'template_user' AND index_name = 'idx_template_user_deleted_at'
+time="2021-12-13T14:11:11+08:00" level=info msg="Service initialization successful."
+time="2021-12-13T14:15:24+08:00" level=info msg="got signal [interrupt], exiting now"
+
+2021/12/13 14:15:26 [32m/Users/ouyangzhicong/go/pkg/mod/gorm.io/driver/mysql@v1.2.1/migrator.go:234
+[0m[33m[0.179ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+2021/12/13 14:15:26 [32m/Users/ouyangzhicong/go/pkg/mod/gorm.io/driver/mysql@v1.2.1/migrator.go:237
+[0m[33m[0.971ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'template_test_db%' ORDER BY SCHEMA_NAME='template_test_db' DESC limit 1
+
+2021/12/13 14:15:26 [32m/Users/ouyangzhicong/workplace/demo/go/go-server-template/pkg/database/database.go:59
+[0m[33m[1.375ms] [34;1m[rows:-][0m SELECT count(*) FROM information_schema.tables WHERE table_schema = 'template_test_db' AND table_name = 'template_user' AND table_type = 'BASE TABLE'
+
+2021/12/13 14:15:26 [32m/Users/ouyangzhicong/go/pkg/mod/gorm.io/driver/mysql@v1.2.1/migrator.go:234
+[0m[33m[0.128ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+2021/12/13 14:15:26 [32m/Users/ouyangzhicong/go/pkg/mod/gorm.io/driver/mysql@v1.2.1/migrator.go:237
+[0m[33m[0.678ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'template_test_db%' ORDER BY SCHEMA_NAME='template_test_db' DESC limit 1
+
+2021/12/13 14:15:26 [32m/Users/ouyangzhicong/go/pkg/mod/gorm.io/driver/mysql@v1.2.1/migrator.go:205
+[0m[33m[1.024ms] [34;1m[rows:-][0m SELECT column_name, is_nullable, data_type, character_maximum_length, numeric_precision, numeric_scale , datetime_precision FROM information_schema.columns WHERE table_schema = 'template_test_db' AND table_name = 'template_user'
+
+2021/12/13 14:15:26 [32m/Users/ouyangzhicong/go/pkg/mod/gorm.io/driver/mysql@v1.2.1/migrator.go:234
+[0m[33m[0.179ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+2021/12/13 14:15:26 [32m/Users/ouyangzhicong/go/pkg/mod/gorm.io/driver/mysql@v1.2.1/migrator.go:237
+[0m[33m[0.677ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'template_test_db%' ORDER BY SCHEMA_NAME='template_test_db' DESC limit 1
+
+2021/12/13 14:15:26 [32m/Users/ouyangzhicong/workplace/demo/go/go-server-template/pkg/database/database.go:59
+[0m[33m[1.052ms] [34;1m[rows:-][0m SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'template_test_db' AND table_name = 'template_user' AND index_name = 'idx_template_user_deleted_at'
+time="2021-12-13T14:15:26+08:00" level=info msg="Service initialization successful."
+time="2021-12-13T14:15:35+08:00" level=info msg="user: %v\n{0}"
+time="2021-12-13T14:15:53+08:00" level=info msg="got signal [interrupt], exiting now"
+
+2021/12/13 14:15:55 [32m/Users/ouyangzhicong/go/pkg/mod/gorm.io/driver/mysql@v1.2.1/migrator.go:234
+[0m[33m[0.167ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+2021/12/13 14:15:55 [32m/Users/ouyangzhicong/go/pkg/mod/gorm.io/driver/mysql@v1.2.1/migrator.go:237
+[0m[33m[0.895ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'template_test_db%' ORDER BY SCHEMA_NAME='template_test_db' DESC limit 1
+
+2021/12/13 14:15:55 [32m/Users/ouyangzhicong/workplace/demo/go/go-server-template/pkg/database/database.go:59
+[0m[33m[1.054ms] [34;1m[rows:-][0m SELECT count(*) FROM information_schema.tables WHERE table_schema = 'template_test_db' AND table_name = 'template_user' AND table_type = 'BASE TABLE'
+
+2021/12/13 14:15:55 [32m/Users/ouyangzhicong/go/pkg/mod/gorm.io/driver/mysql@v1.2.1/migrator.go:234
+[0m[33m[0.131ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+2021/12/13 14:15:55 [32m/Users/ouyangzhicong/go/pkg/mod/gorm.io/driver/mysql@v1.2.1/migrator.go:237
+[0m[33m[0.535ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'template_test_db%' ORDER BY SCHEMA_NAME='template_test_db' DESC limit 1
+
+2021/12/13 14:15:55 [32m/Users/ouyangzhicong/go/pkg/mod/gorm.io/driver/mysql@v1.2.1/migrator.go:205
+[0m[33m[0.966ms] [34;1m[rows:-][0m SELECT column_name, is_nullable, data_type, character_maximum_length, numeric_precision, numeric_scale , datetime_precision FROM information_schema.columns WHERE table_schema = 'template_test_db' AND table_name = 'template_user'
+
+2021/12/13 14:15:55 [32m/Users/ouyangzhicong/go/pkg/mod/gorm.io/driver/mysql@v1.2.1/migrator.go:234
+[0m[33m[0.136ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+2021/12/13 14:15:55 [32m/Users/ouyangzhicong/go/pkg/mod/gorm.io/driver/mysql@v1.2.1/migrator.go:237
+[0m[33m[0.562ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'template_test_db%' ORDER BY SCHEMA_NAME='template_test_db' DESC limit 1
+
+2021/12/13 14:15:55 [32m/Users/ouyangzhicong/workplace/demo/go/go-server-template/pkg/database/database.go:59
+[0m[33m[1.930ms] [34;1m[rows:-][0m SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'template_test_db' AND table_name = 'template_user' AND index_name = 'idx_template_user_deleted_at'
+time="2021-12-13T14:15:55+08:00" level=info msg="Service initialization successful."
+time="2021-12-13T14:15:59+08:00" level=info msg="user: {0}\n"
+time="2021-12-13T14:16:25+08:00" level=info msg="got signal [interrupt], exiting now"
+
+2021/12/13 14:16:28 [32m/Users/ouyangzhicong/go/pkg/mod/gorm.io/driver/mysql@v1.2.1/migrator.go:234
+[0m[33m[0.201ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+2021/12/13 14:16:28 [32m/Users/ouyangzhicong/go/pkg/mod/gorm.io/driver/mysql@v1.2.1/migrator.go:237
+[0m[33m[1.150ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'template_test_db%' ORDER BY SCHEMA_NAME='template_test_db' DESC limit 1
+
+2021/12/13 14:16:28 [32m/Users/ouyangzhicong/workplace/demo/go/go-server-template/pkg/database/database.go:59
+[0m[33m[1.441ms] [34;1m[rows:-][0m SELECT count(*) FROM information_schema.tables WHERE table_schema = 'template_test_db' AND table_name = 'template_user' AND table_type = 'BASE TABLE'
+
+2021/12/13 14:16:28 [32m/Users/ouyangzhicong/go/pkg/mod/gorm.io/driver/mysql@v1.2.1/migrator.go:234
+[0m[33m[0.155ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+2021/12/13 14:16:28 [32m/Users/ouyangzhicong/go/pkg/mod/gorm.io/driver/mysql@v1.2.1/migrator.go:237
+[0m[33m[0.562ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'template_test_db%' ORDER BY SCHEMA_NAME='template_test_db' DESC limit 1
+
+2021/12/13 14:16:28 [32m/Users/ouyangzhicong/go/pkg/mod/gorm.io/driver/mysql@v1.2.1/migrator.go:205
+[0m[33m[1.306ms] [34;1m[rows:-][0m SELECT column_name, is_nullable, data_type, character_maximum_length, numeric_precision, numeric_scale , datetime_precision FROM information_schema.columns WHERE table_schema = 'template_test_db' AND table_name = 'template_user'
+
+2021/12/13 14:16:28 [32m/Users/ouyangzhicong/go/pkg/mod/gorm.io/driver/mysql@v1.2.1/migrator.go:234
+[0m[33m[0.202ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+2021/12/13 14:16:28 [32m/Users/ouyangzhicong/go/pkg/mod/gorm.io/driver/mysql@v1.2.1/migrator.go:237
+[0m[33m[0.505ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'template_test_db%' ORDER BY SCHEMA_NAME='template_test_db' DESC limit 1
+
+2021/12/13 14:16:28 [32m/Users/ouyangzhicong/workplace/demo/go/go-server-template/pkg/database/database.go:59
+[0m[33m[1.080ms] [34;1m[rows:-][0m SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'template_test_db' AND table_name = 'template_user' AND index_name = 'idx_template_user_deleted_at'
+time="2021-12-13T14:16:28+08:00" level=info msg="Service initialization successful."
+time="2021-12-13T14:16:29+08:00" level=info msg="user: {0}\n"
+time="2021-12-13T14:25:33+08:00" level=info msg="got signal [interrupt], exiting now"
+
+2021/12/13 14:25:35 [32m/Users/ouyangzhicong/go/pkg/mod/gorm.io/driver/mysql@v1.2.1/migrator.go:234
+[0m[33m[0.181ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+2021/12/13 14:25:35 [32m/Users/ouyangzhicong/go/pkg/mod/gorm.io/driver/mysql@v1.2.1/migrator.go:237
+[0m[33m[1.018ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'template_test_db%' ORDER BY SCHEMA_NAME='template_test_db' DESC limit 1
+
+2021/12/13 14:25:35 [32m/Users/ouyangzhicong/workplace/demo/go/go-server-template/pkg/database/database.go:59
+[0m[33m[1.529ms] [34;1m[rows:-][0m SELECT count(*) FROM information_schema.tables WHERE table_schema = 'template_test_db' AND table_name = 'template_user' AND table_type = 'BASE TABLE'
+
+2021/12/13 14:25:35 [32m/Users/ouyangzhicong/go/pkg/mod/gorm.io/driver/mysql@v1.2.1/migrator.go:234
+[0m[33m[0.202ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+2021/12/13 14:25:35 [32m/Users/ouyangzhicong/go/pkg/mod/gorm.io/driver/mysql@v1.2.1/migrator.go:237
+[0m[33m[0.697ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'template_test_db%' ORDER BY SCHEMA_NAME='template_test_db' DESC limit 1
+
+2021/12/13 14:25:35 [32m/Users/ouyangzhicong/go/pkg/mod/gorm.io/driver/mysql@v1.2.1/migrator.go:205
+[0m[33m[1.108ms] [34;1m[rows:-][0m SELECT column_name, is_nullable, data_type, character_maximum_length, numeric_precision, numeric_scale , datetime_precision FROM information_schema.columns WHERE table_schema = 'template_test_db' AND table_name = 'template_user'
+
+2021/12/13 14:25:35 [32m/Users/ouyangzhicong/go/pkg/mod/gorm.io/driver/mysql@v1.2.1/migrator.go:234
+[0m[33m[0.135ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+2021/12/13 14:25:35 [32m/Users/ouyangzhicong/go/pkg/mod/gorm.io/driver/mysql@v1.2.1/migrator.go:237
+[0m[33m[0.598ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'template_test_db%' ORDER BY SCHEMA_NAME='template_test_db' DESC limit 1
+
+2021/12/13 14:25:35 [32m/Users/ouyangzhicong/workplace/demo/go/go-server-template/pkg/database/database.go:59
+[0m[33m[1.472ms] [34;1m[rows:-][0m SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'template_test_db' AND table_name = 'template_user' AND index_name = 'idx_template_user_deleted_at'
+time="2021-12-13T14:25:35+08:00" level=info msg="Service initialization successful."
+time="2021-12-13T14:57:19+08:00" level=info msg="got signal [interrupt], exiting now"
+
+2021/12/13 14:58:14 [32m/Users/ouyangzhicong/go/pkg/mod/gorm.io/driver/mysql@v1.2.1/migrator.go:234
+[0m[33m[0.193ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+2021/12/13 14:58:14 [32m/Users/ouyangzhicong/go/pkg/mod/gorm.io/driver/mysql@v1.2.1/migrator.go:237
+[0m[33m[1.821ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'template_test_db%' ORDER BY SCHEMA_NAME='template_test_db' DESC limit 1
+
+2021/12/13 14:58:14 [32m/Users/ouyangzhicong/workplace/demo/go/go-server-template/pkg/database/database.go:59
+[0m[33m[1.567ms] [34;1m[rows:-][0m SELECT count(*) FROM information_schema.tables WHERE table_schema = 'template_test_db' AND table_name = 'template_user' AND table_type = 'BASE TABLE'
+
+2021/12/13 14:58:14 [32m/Users/ouyangzhicong/go/pkg/mod/gorm.io/driver/mysql@v1.2.1/migrator.go:234
+[0m[33m[0.135ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+2021/12/13 14:58:14 [32m/Users/ouyangzhicong/go/pkg/mod/gorm.io/driver/mysql@v1.2.1/migrator.go:237
+[0m[33m[0.488ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'template_test_db%' ORDER BY SCHEMA_NAME='template_test_db' DESC limit 1
+
+2021/12/13 14:58:14 [32m/Users/ouyangzhicong/go/pkg/mod/gorm.io/driver/mysql@v1.2.1/migrator.go:205
+[0m[33m[1.640ms] [34;1m[rows:-][0m SELECT column_name, is_nullable, data_type, character_maximum_length, numeric_precision, numeric_scale , datetime_precision FROM information_schema.columns WHERE table_schema = 'template_test_db' AND table_name = 'template_user'
+
+2021/12/13 14:58:14 [32m/Users/ouyangzhicong/go/pkg/mod/gorm.io/driver/mysql@v1.2.1/migrator.go:234
+[0m[33m[0.128ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+2021/12/13 14:58:14 [32m/Users/ouyangzhicong/go/pkg/mod/gorm.io/driver/mysql@v1.2.1/migrator.go:237
+[0m[33m[0.595ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'template_test_db%' ORDER BY SCHEMA_NAME='template_test_db' DESC limit 1
+
+2021/12/13 14:58:14 [32m/Users/ouyangzhicong/workplace/demo/go/go-server-template/pkg/database/database.go:59
+[0m[33m[1.832ms] [34;1m[rows:-][0m SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'template_test_db' AND table_name = 'template_user' AND index_name = 'idx_template_user_deleted_at'
+time="2021-12-13T14:58:14+08:00" level=info msg="Service initialization successful."
+
+2021/12/13 14:58:16 [32m/Users/ouyangzhicong/workplace/demo/go/go-server-template/repositories/user_repository.go:15
+[0m[33m[1.474ms] [34;1m[rows:1][0m SELECT * FROM `template_user` WHERE id = 6 AND `template_user`.`deleted_at` IS NULL ORDER BY `template_user`.`id` LIMIT 1
+
+2021/12/13 14:58:44 [32m/Users/ouyangzhicong/workplace/demo/go/go-server-template/repositories/user_repository.go:15
+[0m[33m[0.615ms] [34;1m[rows:1][0m SELECT * FROM `template_user` WHERE id = 7 AND `template_user`.`deleted_at` IS NULL ORDER BY `template_user`.`id` LIMIT 1
+time="2021-12-13T14:59:55+08:00" level=info msg="got signal [interrupt], exiting now"
+
+2021/12/13 14:59:57 [32m/Users/ouyangzhicong/go/pkg/mod/gorm.io/driver/mysql@v1.2.1/migrator.go:234
+[0m[33m[0.137ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+2021/12/13 14:59:57 [32m/Users/ouyangzhicong/go/pkg/mod/gorm.io/driver/mysql@v1.2.1/migrator.go:237
+[0m[33m[1.126ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'template_test_db%' ORDER BY SCHEMA_NAME='template_test_db' DESC limit 1
+
+2021/12/13 14:59:57 [32m/Users/ouyangzhicong/workplace/demo/go/go-server-template/pkg/database/database.go:59
+[0m[33m[1.264ms] [34;1m[rows:-][0m SELECT count(*) FROM information_schema.tables WHERE table_schema = 'template_test_db' AND table_name = 'template_user' AND table_type = 'BASE TABLE'
+
+2021/12/13 14:59:57 [32m/Users/ouyangzhicong/go/pkg/mod/gorm.io/driver/mysql@v1.2.1/migrator.go:234
+[0m[33m[0.202ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+2021/12/13 14:59:57 [32m/Users/ouyangzhicong/go/pkg/mod/gorm.io/driver/mysql@v1.2.1/migrator.go:237
+[0m[33m[0.649ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'template_test_db%' ORDER BY SCHEMA_NAME='template_test_db' DESC limit 1
+
+2021/12/13 14:59:57 [32m/Users/ouyangzhicong/go/pkg/mod/gorm.io/driver/mysql@v1.2.1/migrator.go:205
+[0m[33m[1.093ms] [34;1m[rows:-][0m SELECT column_name, is_nullable, data_type, character_maximum_length, numeric_precision, numeric_scale , datetime_precision FROM information_schema.columns WHERE table_schema = 'template_test_db' AND table_name = 'template_user'
+
+2021/12/13 14:59:57 [32m/Users/ouyangzhicong/go/pkg/mod/gorm.io/driver/mysql@v1.2.1/migrator.go:234
+[0m[33m[0.120ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+2021/12/13 14:59:57 [32m/Users/ouyangzhicong/go/pkg/mod/gorm.io/driver/mysql@v1.2.1/migrator.go:237
+[0m[33m[0.512ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'template_test_db%' ORDER BY SCHEMA_NAME='template_test_db' DESC limit 1
+
+2021/12/13 14:59:57 [32m/Users/ouyangzhicong/workplace/demo/go/go-server-template/pkg/database/database.go:59
+[0m[33m[1.148ms] [34;1m[rows:-][0m SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'template_test_db' AND table_name = 'template_user' AND index_name = 'idx_template_user_deleted_at'
+time="2021-12-13T14:59:57+08:00" level=info msg="Service initialization successful."
+
+2021/12/13 15:00:07 [32m/Users/ouyangzhicong/workplace/demo/go/go-server-template/repositories/user_repository.go:15
+[0m[33m[0.787ms] [34;1m[rows:1][0m SELECT * FROM `template_user` WHERE id = 7 AND `template_user`.`deleted_at` IS NULL ORDER BY `template_user`.`id` LIMIT 1
+time="2021-12-13T15:00:07+08:00" level=info msg="user: &{{7 2021-12-13 13:05:43 +0800 CST 2021-12-13 13:05:43 +0800 CST {0001-01-01 00:00:00 +0000 UTC false}} {test true} ttt aaa bbb}"
+time="2021-12-13T15:00:30+08:00" level=info msg="got signal [interrupt], exiting now"
+
+2021/12/13 15:00:32 [32m/Users/ouyangzhicong/go/pkg/mod/gorm.io/driver/mysql@v1.2.1/migrator.go:234
+[0m[33m[0.172ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+2021/12/13 15:00:32 [32m/Users/ouyangzhicong/go/pkg/mod/gorm.io/driver/mysql@v1.2.1/migrator.go:237
+[0m[33m[1.087ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'template_test_db%' ORDER BY SCHEMA_NAME='template_test_db' DESC limit 1
+
+2021/12/13 15:00:32 [32m/Users/ouyangzhicong/workplace/demo/go/go-server-template/pkg/database/database.go:59
+[0m[33m[1.317ms] [34;1m[rows:-][0m SELECT count(*) FROM information_schema.tables WHERE table_schema = 'template_test_db' AND table_name = 'template_user' AND table_type = 'BASE TABLE'
+
+2021/12/13 15:00:32 [32m/Users/ouyangzhicong/go/pkg/mod/gorm.io/driver/mysql@v1.2.1/migrator.go:234
+[0m[33m[0.142ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+2021/12/13 15:00:32 [32m/Users/ouyangzhicong/go/pkg/mod/gorm.io/driver/mysql@v1.2.1/migrator.go:237
+[0m[33m[0.581ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'template_test_db%' ORDER BY SCHEMA_NAME='template_test_db' DESC limit 1
+
+2021/12/13 15:00:32 [32m/Users/ouyangzhicong/go/pkg/mod/gorm.io/driver/mysql@v1.2.1/migrator.go:205
+[0m[33m[1.358ms] [34;1m[rows:-][0m SELECT column_name, is_nullable, data_type, character_maximum_length, numeric_precision, numeric_scale , datetime_precision FROM information_schema.columns WHERE table_schema = 'template_test_db' AND table_name = 'template_user'
+
+2021/12/13 15:00:32 [32m/Users/ouyangzhicong/go/pkg/mod/gorm.io/driver/mysql@v1.2.1/migrator.go:234
+[0m[33m[0.184ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+2021/12/13 15:00:32 [32m/Users/ouyangzhicong/go/pkg/mod/gorm.io/driver/mysql@v1.2.1/migrator.go:237
+[0m[33m[0.793ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'template_test_db%' ORDER BY SCHEMA_NAME='template_test_db' DESC limit 1
+
+2021/12/13 15:00:32 [32m/Users/ouyangzhicong/workplace/demo/go/go-server-template/pkg/database/database.go:59
+[0m[33m[1.247ms] [34;1m[rows:-][0m SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'template_test_db' AND table_name = 'template_user' AND index_name = 'idx_template_user_deleted_at'
+time="2021-12-13T15:00:32+08:00" level=info msg="Service initialization successful."
+
+2021/12/13 15:00:35 [32m/Users/ouyangzhicong/workplace/demo/go/go-server-template/repositories/user_repository.go:15
+[0m[33m[1.122ms] [34;1m[rows:1][0m SELECT * FROM `template_user` WHERE id = 7 AND `template_user`.`deleted_at` IS NULL ORDER BY `template_user`.`id` LIMIT 1
+time="2021-12-13T15:00:35+08:00" level=info msg="user: &{{7 2021-12-13 13:05:43 +0800 CST 2021-12-13 13:05:43 +0800 CST {0001-01-01 00:00:00 +0000 UTC false}} {test true} ttt aaa bbb}"
+time="2021-12-13T15:02:27+08:00" level=info msg="got signal [interrupt], exiting now"
+
+2021/12/13 15:02:30 [32m/Users/ouyangzhicong/go/pkg/mod/gorm.io/driver/mysql@v1.2.1/migrator.go:234
+[0m[33m[0.163ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+2021/12/13 15:02:30 [32m/Users/ouyangzhicong/go/pkg/mod/gorm.io/driver/mysql@v1.2.1/migrator.go:237
+[0m[33m[1.087ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'template_test_db%' ORDER BY SCHEMA_NAME='template_test_db' DESC limit 1
+
+2021/12/13 15:02:30 [32m/Users/ouyangzhicong/workplace/demo/go/go-server-template/pkg/database/database.go:59
+[0m[33m[1.110ms] [34;1m[rows:-][0m SELECT count(*) FROM information_schema.tables WHERE table_schema = 'template_test_db' AND table_name = 'template_user' AND table_type = 'BASE TABLE'
+
+2021/12/13 15:02:30 [32m/Users/ouyangzhicong/go/pkg/mod/gorm.io/driver/mysql@v1.2.1/migrator.go:234
+[0m[33m[0.230ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+2021/12/13 15:02:30 [32m/Users/ouyangzhicong/go/pkg/mod/gorm.io/driver/mysql@v1.2.1/migrator.go:237
+[0m[33m[0.659ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'template_test_db%' ORDER BY SCHEMA_NAME='template_test_db' DESC limit 1
+
+2021/12/13 15:02:30 [32m/Users/ouyangzhicong/go/pkg/mod/gorm.io/driver/mysql@v1.2.1/migrator.go:205
+[0m[33m[1.026ms] [34;1m[rows:-][0m SELECT column_name, is_nullable, data_type, character_maximum_length, numeric_precision, numeric_scale , datetime_precision FROM information_schema.columns WHERE table_schema = 'template_test_db' AND table_name = 'template_user'
+
+2021/12/13 15:02:30 [32m/Users/ouyangzhicong/go/pkg/mod/gorm.io/driver/mysql@v1.2.1/migrator.go:234
+[0m[33m[0.172ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+2021/12/13 15:02:30 [32m/Users/ouyangzhicong/go/pkg/mod/gorm.io/driver/mysql@v1.2.1/migrator.go:237
+[0m[33m[0.519ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'template_test_db%' ORDER BY SCHEMA_NAME='template_test_db' DESC limit 1
+
+2021/12/13 15:02:30 [32m/Users/ouyangzhicong/workplace/demo/go/go-server-template/pkg/database/database.go:59
+[0m[33m[2.451ms] [34;1m[rows:-][0m SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'template_test_db' AND table_name = 'template_user' AND index_name = 'idx_template_user_deleted_at'
+time="2021-12-13T15:02:30+08:00" level=info msg="Service initialization successful."
+
+2021/12/13 15:03:08 [32m/Users/ouyangzhicong/workplace/demo/go/go-server-template/repositories/user_repository.go:15
+[0m[33m[0.737ms] [34;1m[rows:1][0m SELECT * FROM `template_user` WHERE id = 7 AND `template_user`.`deleted_at` IS NULL ORDER BY `template_user`.`id` LIMIT 1
+time="2021-12-13T15:03:08+08:00" level=info msg="user: &{{7 2021-12-13 13:05:43 +0800 CST 2021-12-13 13:05:43 +0800 CST {0001-01-01 00:00:00 +0000 UTC false}} test ttt aaa bbb}"
+
+2021/12/13 15:04:54 [31;1m/Users/ouyangzhicong/workplace/demo/go/go-server-template/repositories/user_repository.go:15 [35;1mrecord not found
+[0m[33m[0.880ms] [34;1m[rows:0][0m SELECT * FROM `template_user` WHERE id = 9 AND `template_user`.`deleted_at` IS NULL ORDER BY `template_user`.`id` LIMIT 1
+time="2021-12-13T15:04:54+08:00" level=info msg="user: <nil>"
+time="2021-12-13T15:06:26+08:00" level=info msg="got signal [interrupt], exiting now"
+
+2021/12/13 15:06:28 [32m/Users/ouyangzhicong/go/pkg/mod/gorm.io/driver/mysql@v1.2.1/migrator.go:234
+[0m[33m[0.160ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+2021/12/13 15:06:28 [32m/Users/ouyangzhicong/go/pkg/mod/gorm.io/driver/mysql@v1.2.1/migrator.go:237
+[0m[33m[0.922ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'template_test_db%' ORDER BY SCHEMA_NAME='template_test_db' DESC limit 1
+
+2021/12/13 15:06:28 [32m/Users/ouyangzhicong/workplace/demo/go/go-server-template/pkg/database/database.go:59
+[0m[33m[1.140ms] [34;1m[rows:-][0m SELECT count(*) FROM information_schema.tables WHERE table_schema = 'template_test_db' AND table_name = 'template_user' AND table_type = 'BASE TABLE'
+
+2021/12/13 15:06:28 [32m/Users/ouyangzhicong/go/pkg/mod/gorm.io/driver/mysql@v1.2.1/migrator.go:234
+[0m[33m[0.176ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+2021/12/13 15:06:28 [32m/Users/ouyangzhicong/go/pkg/mod/gorm.io/driver/mysql@v1.2.1/migrator.go:237
+[0m[33m[0.544ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'template_test_db%' ORDER BY SCHEMA_NAME='template_test_db' DESC limit 1
+
+2021/12/13 15:06:28 [32m/Users/ouyangzhicong/go/pkg/mod/gorm.io/driver/mysql@v1.2.1/migrator.go:205
+[0m[33m[0.906ms] [34;1m[rows:-][0m SELECT column_name, is_nullable, data_type, character_maximum_length, numeric_precision, numeric_scale , datetime_precision FROM information_schema.columns WHERE table_schema = 'template_test_db' AND table_name = 'template_user'
+
+2021/12/13 15:06:28 [32m/Users/ouyangzhicong/go/pkg/mod/gorm.io/driver/mysql@v1.2.1/migrator.go:234
+[0m[33m[0.081ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+2021/12/13 15:06:28 [32m/Users/ouyangzhicong/go/pkg/mod/gorm.io/driver/mysql@v1.2.1/migrator.go:237
+[0m[33m[0.464ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'template_test_db%' ORDER BY SCHEMA_NAME='template_test_db' DESC limit 1
+
+2021/12/13 15:06:28 [32m/Users/ouyangzhicong/workplace/demo/go/go-server-template/pkg/database/database.go:59
+[0m[33m[0.999ms] [34;1m[rows:-][0m SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'template_test_db' AND table_name = 'template_user' AND index_name = 'idx_template_user_deleted_at'
+time="2021-12-13T15:06:28+08:00" level=info msg="Service initialization successful."
+
+2021/12/13 15:06:32 [31;1m/Users/ouyangzhicong/workplace/demo/go/go-server-template/repositories/user_repository.go:15 [35;1mrecord not found
+[0m[33m[0.889ms] [34;1m[rows:0][0m SELECT * FROM `template_user` WHERE id = 9 AND `template_user`.`deleted_at` IS NULL ORDER BY `template_user`.`id` LIMIT 1
+time="2021-12-13T15:06:32+08:00" level=info msg="user: <nil>"
+
+2021/12/13 15:06:38 [32m/Users/ouyangzhicong/workplace/demo/go/go-server-template/repositories/user_repository.go:15
+[0m[33m[0.694ms] [34;1m[rows:1][0m SELECT * FROM `template_user` WHERE id = 6 AND `template_user`.`deleted_at` IS NULL ORDER BY `template_user`.`id` LIMIT 1
+time="2021-12-13T15:06:38+08:00" level=info msg="user: &{{6 0001-01-01 00:00:00 +0000 UTC 0001-01-01 00:00:00 +0000 UTC {0001-01-01 00:00:00 +0000 UTC false}} {admin true} $2a$10$ofA39bAFMpYpIX/Xiz7jtOMH9JnPvYfPRlzHXqAtLPFpbE/cLdjmS evan hello world}"
+time="2021-12-13T15:20:35+08:00" level=info msg="got signal [interrupt], exiting now"
+
+2021/12/13 15:20:37 [32m/Users/ouyangzhicong/go/pkg/mod/gorm.io/driver/mysql@v1.2.1/migrator.go:234
+[0m[33m[0.204ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+2021/12/13 15:20:37 [32m/Users/ouyangzhicong/go/pkg/mod/gorm.io/driver/mysql@v1.2.1/migrator.go:237
+[0m[33m[1.625ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'template_test_db%' ORDER BY SCHEMA_NAME='template_test_db' DESC limit 1
+
+2021/12/13 15:20:37 [32m/Users/ouyangzhicong/workplace/demo/go/go-server-template/pkg/database/database.go:59
+[0m[33m[1.518ms] [34;1m[rows:-][0m SELECT count(*) FROM information_schema.tables WHERE table_schema = 'template_test_db' AND table_name = 'template_user' AND table_type = 'BASE TABLE'
+
+2021/12/13 15:20:37 [32m/Users/ouyangzhicong/go/pkg/mod/gorm.io/driver/mysql@v1.2.1/migrator.go:234
+[0m[33m[0.151ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+2021/12/13 15:20:37 [32m/Users/ouyangzhicong/go/pkg/mod/gorm.io/driver/mysql@v1.2.1/migrator.go:237
+[0m[33m[0.625ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'template_test_db%' ORDER BY SCHEMA_NAME='template_test_db' DESC limit 1
+
+2021/12/13 15:20:37 [32m/Users/ouyangzhicong/go/pkg/mod/gorm.io/driver/mysql@v1.2.1/migrator.go:205
+[0m[33m[1.279ms] [34;1m[rows:-][0m SELECT column_name, is_nullable, data_type, character_maximum_length, numeric_precision, numeric_scale , datetime_precision FROM information_schema.columns WHERE table_schema = 'template_test_db' AND table_name = 'template_user'
+
+2021/12/13 15:20:37 [32m/Users/ouyangzhicong/go/pkg/mod/gorm.io/driver/mysql@v1.2.1/migrator.go:234
+[0m[33m[0.130ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+2021/12/13 15:20:37 [32m/Users/ouyangzhicong/go/pkg/mod/gorm.io/driver/mysql@v1.2.1/migrator.go:237
+[0m[33m[0.592ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'template_test_db%' ORDER BY SCHEMA_NAME='template_test_db' DESC limit 1
+
+2021/12/13 15:20:37 [32m/Users/ouyangzhicong/workplace/demo/go/go-server-template/pkg/database/database.go:59
+[0m[33m[1.444ms] [34;1m[rows:-][0m SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'template_test_db' AND table_name = 'template_user' AND index_name = 'idx_template_user_deleted_at'
+time="2021-12-13T15:20:37+08:00" level=info msg="Service initialization successful."
+time="2021-12-13T15:20:40+08:00" level=info msg=hi
+
+2021/12/13 15:20:40 [32m/Users/ouyangzhicong/workplace/demo/go/go-server-template/repositories/user_repository.go:15
+[0m[33m[1.390ms] [34;1m[rows:1][0m SELECT * FROM `template_user` WHERE id = 6 AND `template_user`.`deleted_at` IS NULL ORDER BY `template_user`.`id` LIMIT 1
+time="2021-12-13T15:24:20+08:00" level=info msg="got signal [interrupt], exiting now"
+time="2021-12-13T15:24:20+08:00" level=info msg="Service start successful."
+
+2021/12/13 15:24:22 [32m/Users/ouyangzhicong/go/pkg/mod/gorm.io/driver/mysql@v1.2.1/migrator.go:234
+[0m[33m[0.161ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+2021/12/13 15:24:22 [32m/Users/ouyangzhicong/go/pkg/mod/gorm.io/driver/mysql@v1.2.1/migrator.go:237
+[0m[33m[1.058ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'template_test_db%' ORDER BY SCHEMA_NAME='template_test_db' DESC limit 1
+
+2021/12/13 15:24:22 [32m/Users/ouyangzhicong/workplace/demo/go/go-server-template/pkg/database/database.go:59
+[0m[33m[1.379ms] [34;1m[rows:-][0m SELECT count(*) FROM information_schema.tables WHERE table_schema = 'template_test_db' AND table_name = 'template_user' AND table_type = 'BASE TABLE'
+
+2021/12/13 15:24:22 [32m/Users/ouyangzhicong/go/pkg/mod/gorm.io/driver/mysql@v1.2.1/migrator.go:234
+[0m[33m[0.119ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+2021/12/13 15:24:22 [32m/Users/ouyangzhicong/go/pkg/mod/gorm.io/driver/mysql@v1.2.1/migrator.go:237
+[0m[33m[0.427ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'template_test_db%' ORDER BY SCHEMA_NAME='template_test_db' DESC limit 1
+
+2021/12/13 15:24:22 [32m/Users/ouyangzhicong/go/pkg/mod/gorm.io/driver/mysql@v1.2.1/migrator.go:205
+[0m[33m[1.700ms] [34;1m[rows:-][0m SELECT column_name, is_nullable, data_type, character_maximum_length, numeric_precision, numeric_scale , datetime_precision FROM information_schema.columns WHERE table_schema = 'template_test_db' AND table_name = 'template_user'
+
+2021/12/13 15:24:22 [32m/Users/ouyangzhicong/go/pkg/mod/gorm.io/driver/mysql@v1.2.1/migrator.go:234
+[0m[33m[0.210ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+2021/12/13 15:24:22 [32m/Users/ouyangzhicong/go/pkg/mod/gorm.io/driver/mysql@v1.2.1/migrator.go:237
+[0m[33m[0.943ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'template_test_db%' ORDER BY SCHEMA_NAME='template_test_db' DESC limit 1
+
+2021/12/13 15:24:22 [32m/Users/ouyangzhicong/workplace/demo/go/go-server-template/pkg/database/database.go:59
+[0m[33m[1.376ms] [34;1m[rows:-][0m SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'template_test_db' AND table_name = 'template_user' AND index_name = 'idx_template_user_deleted_at'
+time="2021-12-13T15:24:22+08:00" level=info msg="Service initialization successful."
+time="2021-12-13T15:24:25+08:00" level=info msg="hi referrer: \n"
+time="2021-12-13T15:24:25+08:00" level=info msg="hi url: /api/user?id=6\n"
+
+2021/12/13 15:24:25 [32m/Users/ouyangzhicong/workplace/demo/go/go-server-template/repositories/user_repository.go:15
+[0m[33m[1.195ms] [34;1m[rows:1][0m SELECT * FROM `template_user` WHERE id = 6 AND `template_user`.`deleted_at` IS NULL ORDER BY `template_user`.`id` LIMIT 1
+time="2021-12-13T15:24:43+08:00" level=info msg="hi referrer: \n"
+time="2021-12-13T15:24:43+08:00" level=info msg="hi url: /api/user?id=6\n"
+
+2021/12/13 15:24:43 [32m/Users/ouyangzhicong/workplace/demo/go/go-server-template/repositories/user_repository.go:15
+[0m[33m[0.882ms] [34;1m[rows:1][0m SELECT * FROM `template_user` WHERE id = 6 AND `template_user`.`deleted_at` IS NULL ORDER BY `template_user`.`id` LIMIT 1
+time="2021-12-13T15:25:06+08:00" level=info msg="got signal [interrupt], exiting now"
+time="2021-12-13T15:25:06+08:00" level=info msg="Service start successful."
+
+2021/12/13 15:25:09 [32m/Users/ouyangzhicong/go/pkg/mod/gorm.io/driver/mysql@v1.2.1/migrator.go:234
+[0m[33m[0.137ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+2021/12/13 15:25:09 [32m/Users/ouyangzhicong/go/pkg/mod/gorm.io/driver/mysql@v1.2.1/migrator.go:237
+[0m[33m[1.307ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'template_test_db%' ORDER BY SCHEMA_NAME='template_test_db' DESC limit 1
+
+2021/12/13 15:25:09 [32m/Users/ouyangzhicong/workplace/demo/go/go-server-template/pkg/database/database.go:59
+[0m[33m[1.361ms] [34;1m[rows:-][0m SELECT count(*) FROM information_schema.tables WHERE table_schema = 'template_test_db' AND table_name = 'template_user' AND table_type = 'BASE TABLE'
+
+2021/12/13 15:25:09 [32m/Users/ouyangzhicong/go/pkg/mod/gorm.io/driver/mysql@v1.2.1/migrator.go:234
+[0m[33m[0.134ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+2021/12/13 15:25:09 [32m/Users/ouyangzhicong/go/pkg/mod/gorm.io/driver/mysql@v1.2.1/migrator.go:237
+[0m[33m[0.457ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'template_test_db%' ORDER BY SCHEMA_NAME='template_test_db' DESC limit 1
+
+2021/12/13 15:25:09 [32m/Users/ouyangzhicong/go/pkg/mod/gorm.io/driver/mysql@v1.2.1/migrator.go:205
+[0m[33m[1.244ms] [34;1m[rows:-][0m SELECT column_name, is_nullable, data_type, character_maximum_length, numeric_precision, numeric_scale , datetime_precision FROM information_schema.columns WHERE table_schema = 'template_test_db' AND table_name = 'template_user'
+
+2021/12/13 15:25:09 [32m/Users/ouyangzhicong/go/pkg/mod/gorm.io/driver/mysql@v1.2.1/migrator.go:234
+[0m[33m[0.127ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+2021/12/13 15:25:09 [32m/Users/ouyangzhicong/go/pkg/mod/gorm.io/driver/mysql@v1.2.1/migrator.go:237
+[0m[33m[0.693ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'template_test_db%' ORDER BY SCHEMA_NAME='template_test_db' DESC limit 1
+
+2021/12/13 15:25:09 [32m/Users/ouyangzhicong/workplace/demo/go/go-server-template/pkg/database/database.go:59
+[0m[33m[1.158ms] [34;1m[rows:-][0m SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'template_test_db' AND table_name = 'template_user' AND index_name = 'idx_template_user_deleted_at'
+time="2021-12-13T15:25:09+08:00" level=info msg="Service initialization successful."
+time="2021-12-13T15:25:12+08:00" level=info msg="hi referrer: \n"
+time="2021-12-13T15:25:12+08:00" level=info msg="hi url: &{GET /api/user?id=6 HTTP/1.1 1 1 map[Accept:[*/*] Accept-Encoding:[gzip, deflate, br] Connection:[keep-alive] Cookie:[evenscookies=d3e0580f-1040-4f18-ad80-bb93a549886f] Postman-Token:[15a7dd74-8c75-4f0d-8855-584dd269d4d8] User-Agent:[PostmanRuntime/7.28.4]] {} <nil> 0 [] false localhost:8086 map[] map[] <nil> map[] [::1]:51147 /api/user?id=6 <nil> <nil> <nil> 0x14000597cc0}\n"
+
+2021/12/13 15:25:12 [32m/Users/ouyangzhicong/workplace/demo/go/go-server-template/repositories/user_repository.go:15
+[0m[33m[0.952ms] [34;1m[rows:1][0m SELECT * FROM `template_user` WHERE id = 6 AND `template_user`.`deleted_at` IS NULL ORDER BY `template_user`.`id` LIMIT 1
+time="2021-12-13T15:25:24+08:00" level=info msg="got signal [interrupt], exiting now"
+time="2021-12-13T15:25:24+08:00" level=info msg=Exited
+
+2021/12/13 15:25:46 [32m/Users/ouyangzhicong/go/pkg/mod/gorm.io/driver/mysql@v1.2.1/migrator.go:234
+[0m[33m[0.187ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+2021/12/13 15:25:46 [32m/Users/ouyangzhicong/go/pkg/mod/gorm.io/driver/mysql@v1.2.1/migrator.go:237
+[0m[33m[1.159ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'template_test_db%' ORDER BY SCHEMA_NAME='template_test_db' DESC limit 1
+
+2021/12/13 15:25:46 [32m/Users/ouyangzhicong/workplace/demo/go/go-server-template/pkg/database/database.go:59
+[0m[33m[1.341ms] [34;1m[rows:-][0m SELECT count(*) FROM information_schema.tables WHERE table_schema = 'template_test_db' AND table_name = 'template_user' AND table_type = 'BASE TABLE'
+
+2021/12/13 15:25:46 [32m/Users/ouyangzhicong/go/pkg/mod/gorm.io/driver/mysql@v1.2.1/migrator.go:234
+[0m[33m[0.166ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+2021/12/13 15:25:46 [32m/Users/ouyangzhicong/go/pkg/mod/gorm.io/driver/mysql@v1.2.1/migrator.go:237
+[0m[33m[0.418ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'template_test_db%' ORDER BY SCHEMA_NAME='template_test_db' DESC limit 1
+
+2021/12/13 15:25:46 [32m/Users/ouyangzhicong/go/pkg/mod/gorm.io/driver/mysql@v1.2.1/migrator.go:205
+[0m[33m[1.114ms] [34;1m[rows:-][0m SELECT column_name, is_nullable, data_type, character_maximum_length, numeric_precision, numeric_scale , datetime_precision FROM information_schema.columns WHERE table_schema = 'template_test_db' AND table_name = 'template_user'
+
+2021/12/13 15:25:46 [32m/Users/ouyangzhicong/go/pkg/mod/gorm.io/driver/mysql@v1.2.1/migrator.go:234
+[0m[33m[0.137ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+2021/12/13 15:25:46 [32m/Users/ouyangzhicong/go/pkg/mod/gorm.io/driver/mysql@v1.2.1/migrator.go:237
+[0m[33m[0.573ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'template_test_db%' ORDER BY SCHEMA_NAME='template_test_db' DESC limit 1
+
+2021/12/13 15:25:46 [32m/Users/ouyangzhicong/workplace/demo/go/go-server-template/pkg/database/database.go:59
+[0m[33m[1.158ms] [34;1m[rows:-][0m SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'template_test_db' AND table_name = 'template_user' AND index_name = 'idx_template_user_deleted_at'
+time="2021-12-13T15:25:46+08:00" level=info msg="Service initialization successful."
+time="2021-12-13T15:25:48+08:00" level=info msg="hi referrer: \n"
+time="2021-12-13T15:25:48+08:00" level=info msg="hi url: /api/user\n"
+
+2021/12/13 15:25:48 [32m/Users/ouyangzhicong/workplace/demo/go/go-server-template/repositories/user_repository.go:15
+[0m[33m[1.060ms] [34;1m[rows:1][0m SELECT * FROM `template_user` WHERE id = 6 AND `template_user`.`deleted_at` IS NULL ORDER BY `template_user`.`id` LIMIT 1
+time="2021-12-13T15:26:37+08:00" level=info msg="hi referrer: \n"
+time="2021-12-13T15:26:37+08:00" level=info msg="hi url: /api/user\n"
+
+2021/12/13 15:26:37 [32m/Users/ouyangzhicong/workplace/demo/go/go-server-template/repositories/user_repository.go:15
+[0m[33m[1.190ms] [34;1m[rows:1][0m SELECT * FROM `template_user` WHERE id = 6 AND `template_user`.`deleted_at` IS NULL ORDER BY `template_user`.`id` LIMIT 1
+time="2021-12-13T15:31:24+08:00" level=info msg="got signal [interrupt], exiting now"
+time="2021-12-13T15:31:24+08:00" level=info msg="Service start successful."
+
+2021/12/13 15:31:26 [32m/Users/ouyangzhicong/go/pkg/mod/gorm.io/driver/mysql@v1.2.1/migrator.go:234
+[0m[33m[0.139ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+2021/12/13 15:31:26 [32m/Users/ouyangzhicong/go/pkg/mod/gorm.io/driver/mysql@v1.2.1/migrator.go:237
+[0m[33m[0.879ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'template_test_db%' ORDER BY SCHEMA_NAME='template_test_db' DESC limit 1
+
+2021/12/13 15:31:26 [32m/Users/ouyangzhicong/workplace/demo/go/go-server-template/pkg/database/database.go:59
+[0m[33m[1.045ms] [34;1m[rows:-][0m SELECT count(*) FROM information_schema.tables WHERE table_schema = 'template_test_db' AND table_name = 'template_user' AND table_type = 'BASE TABLE'
+
+2021/12/13 15:31:26 [32m/Users/ouyangzhicong/go/pkg/mod/gorm.io/driver/mysql@v1.2.1/migrator.go:234
+[0m[33m[0.173ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+2021/12/13 15:31:26 [32m/Users/ouyangzhicong/go/pkg/mod/gorm.io/driver/mysql@v1.2.1/migrator.go:237
+[0m[33m[0.522ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'template_test_db%' ORDER BY SCHEMA_NAME='template_test_db' DESC limit 1
+
+2021/12/13 15:31:26 [32m/Users/ouyangzhicong/go/pkg/mod/gorm.io/driver/mysql@v1.2.1/migrator.go:205
+[0m[33m[1.197ms] [34;1m[rows:-][0m SELECT column_name, is_nullable, data_type, character_maximum_length, numeric_precision, numeric_scale , datetime_precision FROM information_schema.columns WHERE table_schema = 'template_test_db' AND table_name = 'template_user'
+
+2021/12/13 15:31:26 [32m/Users/ouyangzhicong/go/pkg/mod/gorm.io/driver/mysql@v1.2.1/migrator.go:234
+[0m[33m[0.126ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+2021/12/13 15:31:26 [32m/Users/ouyangzhicong/go/pkg/mod/gorm.io/driver/mysql@v1.2.1/migrator.go:237
+[0m[33m[0.492ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'template_test_db%' ORDER BY SCHEMA_NAME='template_test_db' DESC limit 1
+
+2021/12/13 15:31:26 [32m/Users/ouyangzhicong/workplace/demo/go/go-server-template/pkg/database/database.go:59
+[0m[33m[1.024ms] [34;1m[rows:-][0m SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'template_test_db' AND table_name = 'template_user' AND index_name = 'idx_template_user_deleted_at'
+time="2021-12-13T15:31:26+08:00" level=info msg="Service initialization successful."
+time="2021-12-13T15:31:44+08:00" level=info msg="Get the requese at [2021-12-13 15:31:44.992085 +0800 CST m=+18.166958209], url is: [/api/user?id=6], referrer is: [], ua is: [PostmanRuntime/7.28.4]\n"
+
+2021/12/13 15:31:44 [32m/Users/ouyangzhicong/workplace/demo/go/go-server-template/repositories/user_repository.go:15
+[0m[33m[1.272ms] [34;1m[rows:1][0m SELECT * FROM `template_user` WHERE id = 6 AND `template_user`.`deleted_at` IS NULL ORDER BY `template_user`.`id` LIMIT 1
+time="2021-12-13T15:32:03+08:00" level=info msg="Get the requese at [2021-12-13 15:32:03.68817 +0800 CST m=+36.863281459], url is: [/api/user?id=6], referrer is: [], ua is: [PostmanRuntime/7.28.4]\n"
+
+2021/12/13 15:32:03 [32m/Users/ouyangzhicong/workplace/demo/go/go-server-template/repositories/user_repository.go:15
+[0m[33m[0.743ms] [34;1m[rows:1][0m SELECT * FROM `template_user` WHERE id = 6 AND `template_user`.`deleted_at` IS NULL ORDER BY `template_user`.`id` LIMIT 1
+time="2021-12-13T15:32:37+08:00" level=info msg="got signal [interrupt], exiting now"
+time="2021-12-13T15:32:37+08:00" level=info msg=Exited
+
+2021/12/13 15:32:40 [32m/Users/ouyangzhicong/go/pkg/mod/gorm.io/driver/mysql@v1.2.1/migrator.go:234
+[0m[33m[0.182ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+2021/12/13 15:32:40 [32m/Users/ouyangzhicong/go/pkg/mod/gorm.io/driver/mysql@v1.2.1/migrator.go:237
+[0m[33m[1.024ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'template_test_db%' ORDER BY SCHEMA_NAME='template_test_db' DESC limit 1
+
+2021/12/13 15:32:40 [32m/Users/ouyangzhicong/workplace/demo/go/go-server-template/pkg/database/database.go:59
+[0m[33m[1.160ms] [34;1m[rows:-][0m SELECT count(*) FROM information_schema.tables WHERE table_schema = 'template_test_db' AND table_name = 'template_user' AND table_type = 'BASE TABLE'
+
+2021/12/13 15:32:40 [32m/Users/ouyangzhicong/go/pkg/mod/gorm.io/driver/mysql@v1.2.1/migrator.go:234
+[0m[33m[0.158ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+2021/12/13 15:32:40 [32m/Users/ouyangzhicong/go/pkg/mod/gorm.io/driver/mysql@v1.2.1/migrator.go:237
+[0m[33m[0.566ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'template_test_db%' ORDER BY SCHEMA_NAME='template_test_db' DESC limit 1
+
+2021/12/13 15:32:40 [32m/Users/ouyangzhicong/go/pkg/mod/gorm.io/driver/mysql@v1.2.1/migrator.go:205
+[0m[33m[1.066ms] [34;1m[rows:-][0m SELECT column_name, is_nullable, data_type, character_maximum_length, numeric_precision, numeric_scale , datetime_precision FROM information_schema.columns WHERE table_schema = 'template_test_db' AND table_name = 'template_user'
+
+2021/12/13 15:32:40 [32m/Users/ouyangzhicong/go/pkg/mod/gorm.io/driver/mysql@v1.2.1/migrator.go:234
+[0m[33m[0.250ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+2021/12/13 15:32:40 [32m/Users/ouyangzhicong/go/pkg/mod/gorm.io/driver/mysql@v1.2.1/migrator.go:237
+[0m[33m[1.340ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'template_test_db%' ORDER BY SCHEMA_NAME='template_test_db' DESC limit 1
+
+2021/12/13 15:32:40 [32m/Users/ouyangzhicong/workplace/demo/go/go-server-template/pkg/database/database.go:59
+[0m[33m[1.432ms] [34;1m[rows:-][0m SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'template_test_db' AND table_name = 'template_user' AND index_name = 'idx_template_user_deleted_at'
+time="2021-12-13T15:32:40+08:00" level=info msg="Service initialization successful."
+time="2021-12-13T15:32:43+08:00" level=info msg="Get the requese at [2021-12-13 15:32:43.474258 +0800 CST m=+3.424383334], url is: [/api/user?id=6], referrer is: [], ua is: [PostmanRuntime/7.28.4]\n"
+
+2021/12/13 15:32:43 [32m/Users/ouyangzhicong/workplace/demo/go/go-server-template/repositories/user_repository.go:15
+[0m[33m[0.811ms] [34;1m[rows:1][0m SELECT * FROM `template_user` WHERE id = 6 AND `template_user`.`deleted_at` IS NULL ORDER BY `template_user`.`id` LIMIT 1
+time="2021-12-15T23:27:29+08:00" level=info msg="got signal [interrupt], exiting now"
